@@ -1,0 +1,30 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Model" version="4">
+  <OBJECT>
+    <ID name="Model" mc="Standard.Package" uid="596e85cd-9216-4e6d-913e-a8d5996f4dfe"/>
+    <PID name="Test01" mc="Standard.Project" uid="fe1fbaa0-3d73-4ea1-bd65-14a4aa99f329"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[Model]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedElement">
+        <COMPID name="User" mc="Standard.Class" uid="ee8b3295-8642-4cf5-a65b-36488570b588"/>
+        <COMPID name="Animal" mc="Standard.Class" uid="e07ffdc3-291e-4aef-8e6d-d5578168a04b"/>
+        <COMPID name="ContactRequest" mc="Standard.Class" uid="013eb618-3cf9-464e-a237-d3e29197f6f6"/>
+        <COMPID name="Species" mc="Standard.Class" uid="6294bb12-f590-4253-b127-932894b1fb95"/>
+        <COMPID name="Race" mc="Standard.Class" uid="5f9ce666-f557-4480-b803-1706d199c261"/>
+        <COMPID name="Color" mc="Standard.Class" uid="3ed543b0-e82d-4cac-8e25-5421255b42ed"/>
+        <COMPID name="Role" mc="Standard.Class" uid="f9a116f5-20b1-4500-8326-1f5161b45b88"/>
+      </COMP>
+      <COMP relation="Product">
+        <COMPID name="Model Class diagram" mc="Standard.ClassDiagram" uid="bc33f896-a775-457b-bf6d-8537e50f87bd"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

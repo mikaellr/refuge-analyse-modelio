@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?><uml:Model xmlns:uml="http://schema.omg.org/spec/UML/2.1.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmi:version="2.1" xmi:id="_qxM6oN1_EemWn5vGEFaxkw" name="Model">
+  <eAnnotations xmi:id="_qxM6od1_EemWn5vGEFaxkw" source="Objing">
+    <contents xmi:type="uml:Property" xmi:id="_qxM6ot1_EemWn5vGEFaxkw" name="exporterVersion">
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="_qxM6o91_EemWn5vGEFaxkw" value="3.0.0"/>
+    </contents>
+  </eAnnotations>
+  <ownedRule xmi:type="uml:Constraint" xmi:id="_qxM6pN1_EemWn5vGEFaxkw" name="speciesConstraint" constrainedElement="_qxM6-N1_EemWn5vGEFaxkw">
+    <specification xmi:type="uml:LiteralString" xmi:id="_qxM6pd1_EemWn5vGEFaxkw" value="animal.race.species=animal.species"/>
+  </ownedRule>
+  <packagedElement xmi:type="uml:Class" xmi:id="_qxM6pt1_EemWn5vGEFaxkw" name="User">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_qxM6p91_EemWn5vGEFaxkw" name="role" visibility="public" type="_qxM7At1_EemWn5vGEFaxkw" association="_qxM6wN1_EemWn5vGEFaxkw"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_qxM6qN1_EemWn5vGEFaxkw" name="id" visibility="public">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_qxM6qd1_EemWn5vGEFaxkw">
+        <body>&lt;Enter note text here&gt;</body>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="http://schema.omg.org/spec/UML/2.1.1/uml.xml#Integer"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_qxM6qt1_EemWn5vGEFaxkw" name="firstName" visibility="public" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="http://schema.omg.org/spec/UML/2.1.1/uml.xml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_qxM6q91_EemWn5vGEFaxkw" name="lastName" visibility="public" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="http://schema.omg.org/spec/UML/2.1.1/uml.xml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_qxM6rN1_EemWn5vGEFaxkw" name="email" visibility="public">
+      <type xmi:type="uml:PrimitiveType" href="http://schema.omg.org/spec/UML/2.1.1/uml.xml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_qxM6rd1_EemWn5vGEFaxkw" name="phone" visibility="public" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="http://schema.omg.org/spec/UML/2.1.1/uml.xml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_qxM6rt1_EemWn5vGEFaxkw" name="hash" visibility="public" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="http://schema.omg.org/spec/UML/2.1.1/uml.xml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_qxM6r91_EemWn5vGEFaxkw" name="salt" visibility="public">
+      <type xmi:type="uml:PrimitiveType" href="http://schema.omg.org/spec/UML/2.1.1/uml.xml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_qxM6sN1_EemWn5vGEFaxkw" name="fk_role" visibility="public" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="http://schema.omg.org/spec/UML/2.1.1/uml.xml#Integer"/>
+    </ownedAttribute>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_qxM6sd1_EemWn5vGEFaxkw" name="addAnimal" visibility="public">
+      <ownedParameter xmi:id="_qxM6st1_EemWn5vGEFaxkw" name="animal" type="_qxM6xN1_EemWn5vGEFaxkw" isUnique="false">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_qxM6s91_EemWn5vGEFaxkw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_qxM6tN1_EemWn5vGEFaxkw" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_qxM6td1_EemWn5vGEFaxkw" value=""/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_qxM6tt1_EemWn5vGEFaxkw" name="editAnimal" visibility="public">
+      <ownedParameter xmi:id="_qxM6t91_EemWn5vGEFaxkw" name="animal" type="_qxM6xN1_EemWn5vGEFaxkw" isUnique="false">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_qxM6uN1_EemWn5vGEFaxkw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_qxM6ud1_EemWn5vGEFaxkw" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_qxM6ut1_EemWn5vGEFaxkw" value=""/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_qxM6u91_EemWn5vGEFaxkw" name="endAdoptabilty" visibility="public">
+      <ownedParameter xmi:id="_qxM6vN1_EemWn5vGEFaxkw" name="animal" type="_qxM6xN1_EemWn5vGEFaxkw" isUnique="false">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_qxM6vd1_EemWn5vGEFaxkw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_qxM6vt1_EemWn5vGEFaxkw" value="1"/>
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_qxM6v91_EemWn5vGEFaxkw" value=""/>
+      </ownedParameter>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_qxM6wN1_EemWn5vGEFaxkw" memberEnd="_qxM6p91_EemWn5vGEFaxkw _qxM6wd1_EemWn5vGEFaxkw">
+    <ownedEnd xmi:type="uml:Property" xmi:id="_qxM6wd1_EemWn5vGEFaxkw" visibility="public" type="_qxM6pt1_EemWn5vGEFaxkw" association="_qxM6wN1_EemWn5vGEFaxkw">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_qxM6wt1_EemWn5vGEFaxkw" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_qxM6w91_EemWn5vGEFaxkw"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_qxM6xN1_EemWn5vGEFaxkw" name="Animal">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_qxM6xd1_EemWn5vGEFaxkw" name="contactRequests" visibility="public" type="_qxM64d1_EemWn5vGEFaxkw" association="_qxM62t1_EemWn5vGEFaxkw">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_qxM6xt1_EemWn5vGEFaxkw" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_qxM6x91_EemWn5vGEFaxkw"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_qxM6yN1_EemWn5vGEFaxkw" name="color" visibility="public" type="_qxM6_91_EemWn5vGEFaxkw" association="_qxM6291_EemWn5vGEFaxkw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_qxM6yd1_EemWn5vGEFaxkw"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_qxM6yt1_EemWn5vGEFaxkw" name="species" visibility="public" type="_qxM67N1_EemWn5vGEFaxkw" association="_qxM6391_EemWn5vGEFaxkw"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_qxM6y91_EemWn5vGEFaxkw" name="race" visibility="public" type="_qxM69t1_EemWn5vGEFaxkw" association="_qxM64N1_EemWn5vGEFaxkw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_qxM6zN1_EemWn5vGEFaxkw"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_qxM6zd1_EemWn5vGEFaxkw" name="id" visibility="public">
+      <type xmi:type="uml:PrimitiveType" href="http://schema.omg.org/spec/UML/2.1.1/uml.xml#Integer"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_qxM6zt1_EemWn5vGEFaxkw" name="name" visibility="public" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="http://schema.omg.org/spec/UML/2.1.1/uml.xml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_qxM6z91_EemWn5vGEFaxkw" name="description" visibility="public" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="http://schema.omg.org/spec/UML/2.1.1/uml.xml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_qxM60N1_EemWn5vGEFaxkw" name="birthYear" visibility="public" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="http://schema.omg.org/spec/UML/2.1.1/uml.xml#Integer"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_qxM60d1_EemWn5vGEFaxkw" name="sex" visibility="public" type="_qxM7Bt1_EemWn5vGEFaxkw" isUnique="false"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_qxM60t1_EemWn5vGEFaxkw" name="sterilized" visibility="public" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="http://schema.omg.org/spec/UML/2.1.1/uml.xml#Boolean"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_qxM6091_EemWn5vGEFaxkw" name="adoptable" visibility="public" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="http://schema.omg.org/spec/UML/2.1.1/uml.xml#Boolean"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_qxM61N1_EemWn5vGEFaxkw" name="photo" visibility="public" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="http://schema.omg.org/spec/UML/2.1.1/uml.xml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_qxM61d1_EemWn5vGEFaxkw" name="photoContentType" visibility="public" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="http://schema.omg.org/spec/UML/2.1.1/uml.xml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_qxM61t1_EemWn5vGEFaxkw" name="photoContentLength" visibility="public" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="http://schema.omg.org/spec/UML/2.1.1/uml.xml#Integer"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_qxM6191_EemWn5vGEFaxkw" name="fk_species" visibility="public" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="http://schema.omg.org/spec/UML/2.1.1/uml.xml#Integer"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_qxM62N1_EemWn5vGEFaxkw" name="fk_race" visibility="public" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="http://schema.omg.org/spec/UML/2.1.1/uml.xml#Integer"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_qxM62d1_EemWn5vGEFaxkw" name="fk_color" visibility="public" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="http://schema.omg.org/spec/UML/2.1.1/uml.xml#Integer"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_qxM62t1_EemWn5vGEFaxkw" memberEnd="_qxM6xd1_EemWn5vGEFaxkw _qxM64t1_EemWn5vGEFaxkw"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_qxM6291_EemWn5vGEFaxkw" memberEnd="_qxM6yN1_EemWn5vGEFaxkw _qxM63N1_EemWn5vGEFaxkw">
+    <ownedEnd xmi:type="uml:Property" xmi:id="_qxM63N1_EemWn5vGEFaxkw" visibility="public" type="_qxM6xN1_EemWn5vGEFaxkw" association="_qxM6291_EemWn5vGEFaxkw">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_qxM63d1_EemWn5vGEFaxkw" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_qxM63t1_EemWn5vGEFaxkw"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_qxM6391_EemWn5vGEFaxkw" memberEnd="_qxM6yt1_EemWn5vGEFaxkw _qxM68N1_EemWn5vGEFaxkw"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_qxM64N1_EemWn5vGEFaxkw" memberEnd="_qxM6y91_EemWn5vGEFaxkw _qxM6-N1_EemWn5vGEFaxkw"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_qxM64d1_EemWn5vGEFaxkw" name="ContactRequest">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_qxM64t1_EemWn5vGEFaxkw" name="animal" visibility="public" type="_qxM6xN1_EemWn5vGEFaxkw" association="_qxM62t1_EemWn5vGEFaxkw"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_qxM6491_EemWn5vGEFaxkw" name="id" visibility="public">
+      <type xmi:type="uml:PrimitiveType" href="http://schema.omg.org/spec/UML/2.1.1/uml.xml#Integer"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_qxM65N1_EemWn5vGEFaxkw" name="firstName" visibility="public" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="http://schema.omg.org/spec/UML/2.1.1/uml.xml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_qxM65d1_EemWn5vGEFaxkw" name="lastName" visibility="public" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="http://schema.omg.org/spec/UML/2.1.1/uml.xml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_qxM65t1_EemWn5vGEFaxkw" name="email" visibility="public" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="http://schema.omg.org/spec/UML/2.1.1/uml.xml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_qxM6591_EemWn5vGEFaxkw" name="phone" visibility="public" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="http://schema.omg.org/spec/UML/2.1.1/uml.xml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_qxM66N1_EemWn5vGEFaxkw" name="message" visibility="public" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="http://schema.omg.org/spec/UML/2.1.1/uml.xml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_qxM66d1_EemWn5vGEFaxkw" name="date" visibility="public" type="_qxM7B91_EemWn5vGEFaxkw" isUnique="false"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_qxM66t1_EemWn5vGEFaxkw" name="treated" visibility="public" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="http://schema.omg.org/spec/UML/2.1.1/uml.xml#Boolean"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_qxM6691_EemWn5vGEFaxkw" name="fk_animal" visibility="public" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="http://schema.omg.org/spec/UML/2.1.1/uml.xml#Integer"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_qxM67N1_EemWn5vGEFaxkw" name="Species">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_qxM67d1_EemWn5vGEFaxkw" name="races" visibility="public" type="_qxM69t1_EemWn5vGEFaxkw" aggregation="composite" association="_qxM69d1_EemWn5vGEFaxkw">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_qxM67t1_EemWn5vGEFaxkw" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_qxM6791_EemWn5vGEFaxkw"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_qxM68N1_EemWn5vGEFaxkw" name="animals" visibility="public" type="_qxM6xN1_EemWn5vGEFaxkw" aggregation="composite" association="_qxM6391_EemWn5vGEFaxkw">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_qxM68d1_EemWn5vGEFaxkw" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_qxM68t1_EemWn5vGEFaxkw"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_qxM6891_EemWn5vGEFaxkw" name="id" visibility="public">
+      <type xmi:type="uml:PrimitiveType" href="http://schema.omg.org/spec/UML/2.1.1/uml.xml#Integer"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_qxM69N1_EemWn5vGEFaxkw" name="name" visibility="public">
+      <type xmi:type="uml:PrimitiveType" href="http://schema.omg.org/spec/UML/2.1.1/uml.xml#String"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_qxM69d1_EemWn5vGEFaxkw" memberEnd="_qxM67d1_EemWn5vGEFaxkw _qxM6991_EemWn5vGEFaxkw"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_qxM69t1_EemWn5vGEFaxkw" name="Race">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_qxM6991_EemWn5vGEFaxkw" name="species" visibility="public" type="_qxM67N1_EemWn5vGEFaxkw" association="_qxM69d1_EemWn5vGEFaxkw"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_qxM6-N1_EemWn5vGEFaxkw" name="animals" visibility="public" type="_qxM6xN1_EemWn5vGEFaxkw" aggregation="composite" association="_qxM64N1_EemWn5vGEFaxkw">
+      <eAnnotations xmi:id="_qxM6-d1_EemWn5vGEFaxkw" source="Objing"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_qxM6-t1_EemWn5vGEFaxkw" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_qxM6-91_EemWn5vGEFaxkw"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_qxM6_N1_EemWn5vGEFaxkw" name="id" visibility="public">
+      <type xmi:type="uml:PrimitiveType" href="http://schema.omg.org/spec/UML/2.1.1/uml.xml#Integer"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_qxM6_d1_EemWn5vGEFaxkw" name="name" visibility="public" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="http://schema.omg.org/spec/UML/2.1.1/uml.xml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_qxM6_t1_EemWn5vGEFaxkw" name="fk_species" visibility="public" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="http://schema.omg.org/spec/UML/2.1.1/uml.xml#Integer"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_qxM6_91_EemWn5vGEFaxkw" name="Color">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_qxM7AN1_EemWn5vGEFaxkw" name="id" visibility="public" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="http://schema.omg.org/spec/UML/2.1.1/uml.xml#Integer"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_qxM7Ad1_EemWn5vGEFaxkw" name="name" visibility="public">
+      <type xmi:type="uml:PrimitiveType" href="http://schema.omg.org/spec/UML/2.1.1/uml.xml#String"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_qxM7At1_EemWn5vGEFaxkw" name="Role">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_qxM7A91_EemWn5vGEFaxkw" name="id" visibility="public">
+      <type xmi:type="uml:PrimitiveType" href="http://schema.omg.org/spec/UML/2.1.1/uml.xml#Integer"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_qxM7BN1_EemWn5vGEFaxkw" name="name" visibility="public">
+      <type xmi:type="uml:PrimitiveType" href="http://schema.omg.org/spec/UML/2.1.1/uml.xml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_qxM7Bd1_EemWn5vGEFaxkw" name="description" visibility="public" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="http://schema.omg.org/spec/UML/2.1.1/uml.xml#String"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_qxM7Bt1_EemWn5vGEFaxkw" name="char"/>
+  <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_qxM7B91_EemWn5vGEFaxkw" name="date"/>
+</uml:Model>
